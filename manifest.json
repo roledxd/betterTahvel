@@ -1,0 +1,36 @@
+{
+    "version": "0.0.1",
+    "name": "Better Tahvel",
+    "manifest_version": 2,
+    "short_name": "bettertahvel",
+    "description": "Better Tahvel",
+    "permissions": ["tabs","storage", "<all_urls>", "contextMenus"],
+    "web_accessible_resources": ["css/*.css"],
+    "offline_enabled": true,
+    "icons": {
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    },
+    "browser_action": {
+      "default_icon": "icons/icon.png"
+    },
+    "content_scripts": [
+      {
+        "all_frames": true,
+        "match_about_blank": true,
+        "matches": ["*://tahvel.edu.ee/*"],
+        "run_at": "document_start",
+        "exclude_globs": ["*/chrome/newtab*"],
+        "js": ["js/main.js"]
+      },
+      {
+        "all_frames": true,
+        "match_about_blank": true,
+        "matches": ["*://tahvel.edu.ee/*"],
+        "run_at": "document_start",
+        "exclude_globs": ["*/chrome/newtab*"],
+        "css": ["css/universal.css"]
+      }
+    ]
+  }
+  
