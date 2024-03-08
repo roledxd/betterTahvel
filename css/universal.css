@@ -2,8 +2,8 @@
    --base-color-dark-grey-1: rgb(63, 63, 63);
    --base-color-dark-grey-2: rgb(87, 90, 101);
    --base-color-dark-grey-3: rgb(138, 152, 165);
-   --base-color-grey-1: rgb(255, 255, 255);
-   --base-color-grey-2: rgb(255, 255, 255);
+   --base-color-grey-1: rgb(255, 255, 255) !important; 
+   --base-color-grey-2: rgb(255, 255, 255) !important;
    --base-color-off-white-1: rgb(236, 240, 242);
    --base-color-off-white-2: rgb(245, 247, 248);
    --base-color-pure-white: rgb(255, 255, 255);
