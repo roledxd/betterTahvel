@@ -18,6 +18,7 @@ Better Tahvel is a browser extension designed to enhance the user experience of 
 - Replaced blue header of tables with white clean header
 - Removed border and text from filters and sort section
 - Changed scrollbars globally to clean and minimalistic ones
+- Highlights a grade in Dairy if it is X, 0, ?, 1 or 2
 
 ## Installation
 

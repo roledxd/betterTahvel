@@ -194,3 +194,17 @@ table.md-table:not(.md-row-select) td.md-cell:first-child, table.md-table:not(.m
 .fc-theme-standard .fc-scrollgrid {
    border: none !important;
 }
+
+.layout-align-start-center.layout-row .bold:before {
+   content: attr(data-content); /* Add the content of the element as pseudo-element content */
+   display: none; /* Hide the added content */
+ }
+ 
+ .layout-align-start-center.layout-row .bold[data-content='2'],
+ .layout-align-start-center.layout-row .bold[data-content='X'],
+ .layout-align-start-center.layout-row .bold[data-content='1'],
+ .layout-align-start-center.layout-row .bold[data-content='?'],
+ .layout-align-start-center.layout-row .bold[data-content='0'] {
+   color: red; /* Change the text color for specified content */
+ }
+ 
